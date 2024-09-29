@@ -3,18 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/css/style.css">
-    <title>File Downloader | Fajrieee</title>
+    <!-- <link rel="stylesheet" href="src/css/style.css"> -->
+    <title>Download file from url by fjribptra</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
 </head>
 <body>
-    <div class="container">
-        <div class="wrapper">
-            <h2>File Downloader</h2>
-            <p>Please enter the file or image url</p>
-            <input type="text" placeholder="Enter the url" id="input">
-            <button id="downloadButton">Download</button>
+    <nav class="bg-green-500 p-5 text-white">
+        <button class="italic font-semibold">Online File Downloader</button>
+    </nav>
+    <div class="container max-w-3xl mx-auto px-5">
+        <div class="flex justify-center flex-col items-center gap-5 py-40">
+            <h1 class="text-3xl text-center md:text-5xl font-bold">Download File from URL Online</h1>
+            <p class="text-slate-500">You need to paste the url into input field bellow</p>
+        </div>
+        <div class="wrapper flex flex-col justify-center items-center border-2 border-slate-700">
+            <input class="p-5 block w-full" type="text" placeholder="Example : https://example.com/test.pdf" id="input">
+            <button class="bg-green-500 p-5 w-full text-white" id="downloadButton">Download</button>
+        </div>
+        <div class="py-10 flex flex-col gap-5">
+            <h1 class="text-2xl md:text-4xl">How to Download File from URL Online?</h1>
+            <p>Do you want to download a file from a URL online? Here’s how you can do it:</p>
+            <ol class="list-decimal ml-5">
+                <li>Copy the URL of the file you want to download.</li>
+                <li>Paste the URL into the input field.</li>
+                <li>Click the button.</li>
+                <li>The file will be downloaded automatically.</li>
+            </ol>
         </div>
     </div>
+    <footer class="p-5">
+        <p class="text-center text-slate-500">&copy; 2024 By <a class="text-blue-500" href="https://fjribptra.github.io">fjribptra</a></p>
+    </footer>
     <script src="src/js/app.js" type="module"></script>
 </body>
 </html>
